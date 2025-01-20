@@ -1,14 +1,45 @@
-HELP.md
+# General
+*.log
+*.lock
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Maven/Gradle
 .gradle
 build/
-/src/main/resources/application.yml
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
-#RDS 연동 완
-#취소
-#로컬로변경 ㅠ
-### STS ###
+
+# IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# VS Code
+.vscode/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Spring Boot
+HELP.md
+/src/main/resources/application.yml
+*.properties
+*.yml
+.env
+
+# Eclipse / STS
 .apt_generated
 .classpath
 .factorypath
@@ -20,22 +51,6 @@ bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
-### IntelliJ IDEA ##
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
-.vscode/
-
+# OS Specific
+.DS_Store
+Thumbs.db
